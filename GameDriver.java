@@ -12,6 +12,10 @@ public class GameDriver {
 		String ans = sc.next();
 		
 		gs.playTheGame(ans);
+		results(gs);
+	}
+	
+	public static void results (GameService gs) {
 		if (gs.score.win) {
 			System.out.println("You won!");
 		} else if (gs.score.loss) {
